@@ -2,6 +2,7 @@ file_format: "1"
 id: redox_manuform
 name: Redox Manuform
 type: shield
+url: https://github.com/1770438260/Redox-Manuform
 requires: [2 x nrfmicro]
 features:
   - keys
