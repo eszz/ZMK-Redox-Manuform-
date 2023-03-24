@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        PrtSc: PrtSc {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp LSHFT &kp S>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,14 +32,14 @@
             //                             |   PG_DOWN | LOWER |           ---           |  DEL  |   END     |
 
             bindings = <
-  &kp ESC        &kp N1       &kp N2       &kp N3     &kp N4          &kp N5       &kp LPAR   &kp RPAR           &kp N6    &kp N7     &kp N8    &kp N9     &kp N0      &mo 0
-  &kp TAB         &kp Q        &kp W        &kp E      &kp R           &kp T       &kp LBKT   &kp RBKT            &kp Y     &kp U      &kp I     &kp O      &kp P   &kp SEMI
-&kp MINUS         &kp A        &kp S        &kp D      &kp F           &kp G                                      &kp H     &kp J      &kp K     &kp L  &kp EQUAL    &kp SQT
- &kp CAPS         &kp Z        &kp X        &kp C      &kp V           &kp B                                      &kp N     &kp M  &kp COMMA   &kp DOT     &kp UP   &kp DOWN
- &kp LALT  &kp LEFT_GUI  &mt LCTRL C  &mt LCTRL V                                                                                   &kp FSLH  &kp BSLH   &kp LEFT  &kp RIGHT
-                                                   &kp SPACE                                                             &kp BSPC
-                                                              &kp LEFT_SHIFT      &kp PG_UP  &kp PSCRN  &kp RIGHT_SHIFT
-                                                                   &kp LCTRL  &kp PAGE_DOWN   &kp HOME        &kp ENTER
+  &kp ESC        &kp N1       &kp N2       &kp N3     &kp N4          &kp N5       &kp LPAR  &kp RPAR           &kp N6    &kp N7     &kp N8    &kp N9     &kp N0      &mo 0
+  &kp TAB         &kp Q        &kp W        &kp E      &kp R           &kp T       &kp LBKT  &kp RBKT            &kp Y     &kp U      &kp I     &kp O      &kp P   &kp SEMI
+&kp MINUS         &kp A        &kp S        &kp D      &kp F           &kp G                                     &kp H     &kp J      &kp K     &kp L  &kp EQUAL    &kp SQT
+ &kp CAPS         &kp Z        &kp X        &kp C      &kp V           &kp B                                     &kp N     &kp M  &kp COMMA   &kp DOT     &kp UP   &kp DOWN
+ &kp LALT  &kp LEFT_GUI  &mt LCTRL C  &mt LCTRL V                                                                                  &kp FSLH  &kp BSLH   &kp LEFT  &kp RIGHT
+                                                   &kp SPACE                                                            &kp BSPC
+                                                              &kp LEFT_SHIFT      &kp PG_UP    &PrtSc  &kp RIGHT_SHIFT
+                                                                   &kp LCTRL  &kp PAGE_DOWN  &kp HOME        &kp ENTER
             >;
         };
     };
