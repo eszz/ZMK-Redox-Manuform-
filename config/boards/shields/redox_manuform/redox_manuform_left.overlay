@@ -1,4 +1,4 @@
-#include "skeletyl_rene.dtsi"
+#include "redox_manuform.dtsi"
 
 &kscan0 {
         col-gpios
