@@ -1,0 +1,12 @@
+file_format: "1"
+id: redox_manuform
+name: Redox Manuform
+type: shield
+requires: [2 x nrfmicro]
+features:
+  - keys
+  - wireless
+  - split
+siblings:
+  - redox_manuform_left
+  - redox_manuform_right

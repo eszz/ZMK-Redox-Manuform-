@@ -1,0 +1,5 @@
+config SHIELD_REDOX_MANUFORM_LEFT
+    def_bool $(shields_list_contains,redox_manuform_left)
+
+config SHIELD_REDOX_MANUFORM_RIGHT
+    def_bool $(shields_list_contains,redox_manuform_right)
