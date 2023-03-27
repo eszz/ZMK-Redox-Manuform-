@@ -64,14 +64,11 @@
             //                             |   PG_DOWN | LOWER |           ---           |  DEL  |   END     |
 
             bindings = <
-  &kp ESC  &kp N1    &kp N2    &kp N3     &kp N4          &kp N5  &kp LPAR  &kp RPAR           &kp N6    &kp N7     &kp N8    &kp N9     &kp N0      &mo 1
-  &kp TAB   &kp Q     &kp W     &kp E      &kp R           &kp T  &kp LBKT  &kp RBKT            &kp Y     &kp U      &kp I     &kp O      &kp P   &kp SEMI
-&kp MINUS   &kp A     &kp S     &kp D      &kp F           &kp G                                &kp H     &kp J      &kp K     &kp L  &kp EQUAL    &kp SQT
- &kp CAPS   &kp Z     &kp X     &kp C      &kp V           &kp B                                &kp N     &kp M  &kp COMMA   &kp DOT     &kp UP   &kp DOWN
-    &Undo   &Redo  &kp LGUI  &kp LALT                                                                             &kp FSLH  &kp BSLH   &kp LEFT  &kp RIGHT
-                                       &kp SPACE                                                       &kp BSPC
-                                                  &kp LEFT_SHIFT     &Copy    &PrtSc  &kp RIGHT_SHIFT
-                                                       &kp LCTRL      &Cut    &Paste        &kp ENTER
+  &kp ESC  &kp N1    &kp N2    &kp N3     &kp N4          &kp N5   &kp LPAR   &kp RPAR           &kp N6    &kp N7     &kp N8    &kp N9     &kp N0      &mo 1
+    &mo 1   &kp Q     &kp W     &kp E      &kp R           &kp T   &kp LBKT   &kp RBKT            &kp Y     &kp U      &kp I     &kp O      &kp P   &kp SEMI
+&kp MINUS   &kp A     &kp S     &kp D      &kp F           &kp G      &Copy     &PrtSc            &kp H     &kp J      &kp K     &kp L  &kp EQUAL    &kp SQT
+ &kp CAPS   &kp Z     &kp X     &kp C      &kp V           &kp B  &kp LCTRL     &Paste            &kp N     &kp M  &kp COMMA   &kp DOT     &kp UP   &kp DOWN
+    &Undo   &Redo  &kp LGUI  &kp LALT  &kp SPACE  &kp LEFT_SHIFT       &Cut  &kp ENTER  &kp RIGHT_SHIFT  &kp BSPC   &kp FSLH  &kp BSLH   &kp LEFT  &kp RIGHT
             >;
         };
 
@@ -79,12 +76,9 @@
             bindings = <
 &none  &none  &none  &none  &none  &none  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4               &none
 &none  &none  &none  &none  &none  &none  &none  &out OUT_BLE         &none         &none         &none             &none    &kp C_REWIND  &kp C_FAST_FORWARD
-&none  &none  &none  &none  &none  &none                              &none         &none         &none             &none    &kp C_BRI_UP        &kp C_BRI_DN
-&none  &none  &none  &none  &none  &none                              &none         &none         &none             &none    &kp C_VOL_UP        &kp C_VOL_DN
-&none  &none  &none  &none                                                                   &kp C_MUTE  &kp C_PLAY_PAUSE  &kp C_PREVIOUS          &kp C_NEXT
-                            &none                                                   &none
-                                   &none  &none         &none         &none
-                                   &none  &none         &none         &none
+&none  &none  &none  &none  &none  &none  &none         &none         &none         &none         &none             &none    &kp C_BRI_UP        &kp C_BRI_DN
+&none  &none  &none  &none  &none  &none  &none         &none         &none         &none         &none             &none    &kp C_VOL_UP        &kp C_VOL_DN
+&none  &none  &none  &none  &none  &none  &none         &none         &none         &none    &kp C_MUTE  &kp C_PLAY_PAUSE  &kp C_PREVIOUS          &kp C_NEXT
             >;
         };
     };
