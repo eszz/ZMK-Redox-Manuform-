@@ -1,10 +1,6 @@
 #include "redox_manuform.dtsi"
 
-kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
-
-        diode-direction = "col2row";
+&kscan0 {
         col-gpios
             = <&pro_micro 3 GPIO_ACTIVE_HIGH>
             , <&pro_micro 4 GPIO_ACTIVE_HIGH>
