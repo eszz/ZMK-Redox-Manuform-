@@ -11,7 +11,7 @@
 
 / {
     macros {
-        COPY: fuzhi {
+        copy: copy {
             compatible = "zmk,behavior-macro";
             label = "COPY";
             #binding-cells = <0>;
