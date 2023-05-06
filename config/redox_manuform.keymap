@@ -12,8 +12,8 @@
 / {
     macros {
         copy: copy {
-            compatible = "zmk,behavior-macro";
-            label = "COPY";
+            label = "copy";
+            compatible = "zmk,behavior-macro";            
             #binding-cells = <0>;
             bindings =
                 = <&macro_press &kp LCTRL>
