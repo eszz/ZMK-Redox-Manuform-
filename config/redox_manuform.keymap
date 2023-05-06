@@ -12,14 +12,17 @@
 / {
     macros {
         copy: copy {
-            label = "copy";
-            compatible = "zmk,behavior-macro";            
+            label = "fuzhi";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>;
-            };
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
     };
 
     keymap {
