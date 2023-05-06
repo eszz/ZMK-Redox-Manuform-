@@ -67,8 +67,6 @@
                                                   &kp SPACE      &Copy  &kp PRINTSCREEN  &kp BSPC
                                                    &kp CAPS       &Cut           &Paste   &kp TAB
             >;
-
-            sensor-bindings;
         };
 
         Layer__1 {
@@ -82,8 +80,6 @@
                                    &none  &none         &none         &none
                                    &none  &none         &none         &none
             >;
-
-            sensor-bindings;
         };
     };
 };
