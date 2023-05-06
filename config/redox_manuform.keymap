@@ -18,9 +18,21 @@
             bindings =
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
+                , <&macro_release &kp LCTRL>;
+            };
+    };
+    
+    / {
+    macros {
+        cut: cut {
+            label = "cut";
+            compatible = "zmk,behavior-macro";            
+            #binding-cells = <0>;
+            bindings =
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>;
+            };
     };
 
     keymap {
