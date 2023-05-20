@@ -118,7 +118,7 @@
 &kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &kp B                            &kp N      &kp M  &kp COMMA   &kp DOT   &kp LBKT   &kp RBKT
     &mo 2   &mo 3  &kp LGUI  &kp LALT                                                                     &kp FSLH  &kp BSLH  &kp PG_UP  &kp PG_DN
                                        &kp LCTRL                                              &kp RSHFT
-                                                      &mo 1       &all     &print   &kp BSPC
+                                                      &mo 1      &word     &print   &kp BSPC
                                                   &kp ENTER     &paste      &home  &kp SPACE
             >;
         };
