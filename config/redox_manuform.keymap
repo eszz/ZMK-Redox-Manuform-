@@ -125,14 +125,14 @@
 
         layer_2 {
             bindings = <
-&none  &none     &none     &none      &none  &none  &none  &none  &none   &none   &none   &none  &none  &none
-&none  &none     &none    &kp UP      &none  &none  &none  &none  &none  &kp N7  &kp N8  &kp N9  &none  &none
-&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none                &none  &kp N4  &kp N5  &kp N6  &none  &none
-&none  &none     &none     &none      &none  &none                &none  &kp N1  &kp N2  &kp N3  &none  &none
-&none  &none     &none     &none                                                 &kp N0   &none  &none  &none
-                                      &none                               &none
-                                             &none  &none  &none  &none
-                                             &none  &none  &none  &none
+&none  &none     &none     &none      &none  &none  &none  &none      &none   &none  &kp FSLH  &kp STAR      &none  &none
+&none  &none     &none    &kp UP      &none  &none  &none  &none      &none  &kp N7    &kp N8    &kp N9  &kp MINUS  &none
+&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none                    &none  &kp N4    &kp N5    &kp N6   &kp PLUS  &none
+&none  &none     &none     &none      &none  &none                    &none  &kp N1    &kp N2    &kp N3      &none  &none
+&none  &none     &none     &none                                                       &kp N0   &kp DOT      &none  &none
+                                      &none                                   &none
+                                             &none  &none  &none   &kp BSPC
+                                             &none  &none  &none  &kp SPACE
             >;
         };
 
@@ -151,14 +151,14 @@
 
         Layer__1 {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4               &none
-&none  &none  &none  &none  &none  &none  &none  &out OUT_BLE         &none         &none         &none             &none       &kp C_REWIND  &kp C_FAST_FORWARD
-&none  &none  &none  &none  &none  &none                              &none         &none         &none             &none       &kp C_BRI_DN        &kp C_BRI_UP
-&none  &none  &none  &none  &none  &none                              &none         &none         &none             &none  &kp C_VOLUME_DOWN        &kp C_VOL_UP
-&none  &none  &none  &none                                                                   &kp C_MUTE  &kp C_PLAY_PAUSE     &kp C_PREVIOUS          &kp C_NEXT
-                            &none                                                   &none
-                                   &none  &none         &none         &none
-                                   &none  &none         &none         &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none       &none             &none              &none               &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none       &none             &none       &kp C_REWIND  &kp C_FAST_FORWARD
+&none  &none  &none  &none  &none  &none                &none  &none       &none             &none       &kp C_BRI_DN        &kp C_BRI_UP
+&none  &none  &none  &none  &none  &none                &none  &none       &none             &none  &kp C_VOLUME_DOWN        &kp C_VOL_UP
+&none  &none  &none  &none                                            &kp C_MUTE  &kp C_PLAY_PAUSE     &kp C_PREVIOUS          &kp C_NEXT
+                            &none                              &none
+                                   &none  &none  &none  &none
+                                   &none  &none  &none  &none
             >;
         };
     };
