@@ -95,6 +95,15 @@
                 <&cut>,
                 <&all>;
         };
+        number: number {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NUMBER";
+            #binding-cells = <0>;
+            bindings =
+                <&mo 1>,
+                <&none>,
+                <&tog 1>;
+        };
     };
 
     keymap {
