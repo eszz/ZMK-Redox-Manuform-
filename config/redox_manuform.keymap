@@ -102,7 +102,7 @@
             bindings =
                 <&mo 1>,
                 <&none>,
-                <&tog 1>;
+                <&sl 1>;
         };
     };
 
