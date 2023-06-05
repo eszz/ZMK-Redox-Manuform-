@@ -27,7 +27,7 @@
 &mwh {
     time-to-max-speed-ms = <2000>;
     acceleration-exponent = <0>;
-    delay-ms = <200>;
+    delay-ms = <0>;
 };
 
 / {
