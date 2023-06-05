@@ -218,7 +218,7 @@
 &kp LEFT_SHIFT     &kp LCTRL  &kp BSPC    &kp N0                                                                    &kp N0  &kp LEFT      &kp DOWN  &kp RIGHT
                                                      &kp RET                                             &kp RET
                                                               &to 0      &word      &none  &kp SPACE
-                                                              &none     &paste      &none   &kp BSPC
+                                                              &to 5     &paste      &none   &kp BSPC
             >;
         };
 
@@ -269,7 +269,7 @@
     &none      &none       &none  &mwh MWH_D       &none   &none                    &none       &none  &mmv MMV_D       &none  &none  &none
     &none      &none       &none       &none                                                                &none       &none  &none  &none
                                                    &none                                    &mkp MCLK
-                                                          &tog 1  &none  &none  &mkp LCLK
+                                                           &to 1  &none  &none  &mkp LCLK
                                                            &to 0  &none  &none  &mkp RCLK
             >;
         };
