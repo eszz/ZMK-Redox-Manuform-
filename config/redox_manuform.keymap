@@ -186,7 +186,7 @@
 &kp LEFT_SHIFT     &kp LCTRL  &kp BSPC    &kp N0                                                                    &kp N0  &kp LEFT      &kp DOWN  &kp RIGHT
                                                      &kp RET                                             &kp RET
                                                               &to 0      &word      &none  &kp SPACE
-                                                              &none     &print      &none   &kp BSPC
+                                                              &none     &paste      &none   &kp BSPC
             >;
         };
 
