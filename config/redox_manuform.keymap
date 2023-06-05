@@ -177,7 +177,7 @@
  &kp CAPS   &kp A     &kp S     &kp D   &kp F      &kp G                            &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT
 &kp LSHFT   &kp Z     &kp X     &kp C   &kp V      &kp B                            &kp N      &kp M  &kp COMMA   &kp DOT   &kp LBKT   &kp RBKT
 &kp LCTRL   &mo 3  &kp LGUI  &kp LALT                                                                  &kp FSLH  &kp BSLH  &kp PG_UP  &kp PG_DN
-                                        &mo 0                                              &kp RSHFT
+                                        &mo 5                                              &kp RSHFT
                                                  &number      &word     &print  &kp SPACE
                                                &kp ENTER     &paste      &home   &kp BSPC
             >;
