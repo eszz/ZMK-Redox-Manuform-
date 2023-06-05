@@ -19,10 +19,10 @@
 
 // mouse wheel settings
 
-#define MWH_U SCROLL_VERT(7)
-#define MWH_D SCROLL_VERT(-7)
-#define MWH_L SCROLL_HOR(-7)
-#define MWH_R SCROLL_HOR(7)
+#define MWH_U SCROLL_VERT(9)
+#define MWH_D SCROLL_VERT(-9)
+#define MWH_L SCROLL_HOR(-9)
+#define MWH_R SCROLL_HOR(9)
 
 &mwh {
     time-to-max-speed-ms = <2000>;
