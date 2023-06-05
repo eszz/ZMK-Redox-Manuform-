@@ -25,7 +25,7 @@
 #define MWH_R SCROLL_HOR(15)
 
 &mwh {
-    time-to-max-speed-ms = <2000>;
+    time-to-max-speed-ms = <1500>;
     acceleration-exponent = <0>;
     delay-ms = <0>;
 };
