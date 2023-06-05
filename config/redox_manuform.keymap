@@ -12,7 +12,7 @@
 #define MMV_R MOVE_HOR(650)
 
 &mmv {
-    time-to-max-speed-ms = <500>;
+    time-to-max-speed-ms = <700>;
     acceleration-exponent = <1>;
     delay-ms = <0>;
 };
