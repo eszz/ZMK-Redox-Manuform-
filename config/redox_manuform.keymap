@@ -25,7 +25,7 @@
 #define MWH_R SCROLL_HOR(15)
 
 &mwh {
-    time-to-max-speed-ms = <2000>;
+    time-to-max-speed-ms = <4000>;
     acceleration-exponent = <0>;
     delay-ms = <200>;
 };
@@ -172,8 +172,8 @@
 &kp LSHFT   &kp Z     &kp X     &kp C      &kp V    &kp B                            &kp N      &kp M  &kp COMMA   &kp DOT   &kp LBKT   &kp RBKT
 &kp LCTRL   &mo 2  &kp LGUI  &kp LALT                                                                   &kp FSLH  &kp BSLH  &kp PG_UP  &kp PG_DN
                                        &kp ENTER                                            &kp RSHFT
-                                                  &number      &word     &print  &kp SPACE
-                                                    &mo 5     &paste      &home   &kp BSPC
+                                                    &mo 5      &word     &print  &kp SPACE
+                                                  &number     &paste      &home   &kp BSPC
             >;
         };
 
