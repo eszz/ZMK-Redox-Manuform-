@@ -246,18 +246,6 @@
                                    &none  &none  &none  &none
                                    &none  &none  &none  &none
             >;
-            
-            Layer__6 {
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none                                              &none  &none  &none  &none
-                            &none                                &none
-                                   &none  &none    &none  &none
-                                   &none  &none    &none  &none
-            >;
         };
     };
 };
