@@ -285,13 +285,13 @@
         Game {
             bindings = <
 &kp ESC      &kp V  &kp N4  &kp N6        &kp N7     &kp N8    &none  &to 0  &none  &none  &none  &none  &none  &none
- &kp F1      &kp B   &kp R  &kp N1         &kp E     &kp N2    &mo 7  &none  &none  &none  &none  &none  &none  &none
+ &kp F1      &none   &kp R  &kp N1         &kp E     &kp N2    &mo 7  &none  &none  &none  &none  &none  &none  &none
   &kp M  &kp LSHFT   &kp A   &kp W         &kp D      &kp F                  &none  &none  &none  &none  &none  &none
   &none  &kp LCTRL  &kp N7   &kp S        &kp N8      &kp Q                  &none  &none  &none  &none  &none  &none
   &none      &none   &none   &none                                                         &none  &none  &none  &none
                                     &kp LEFT_ALT                                    &none
                                                   &kp SPACE  &kp TAB  &none  &none
-                                                      &kp G    &kp T  &none  &none
+                                                      &kp B    &kp T  &none  &none
             >;
 
             label = "Game";
