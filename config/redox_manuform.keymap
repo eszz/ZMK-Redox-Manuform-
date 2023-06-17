@@ -186,7 +186,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             // --------------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |   (   |           ---           |  )    |  6  |  7  |  8    |  9   | 0  |    BKSP   |
             // | TAB   |  Q  |  W  |   E   |  R  |  T  |   [   |           ---           |  ]    |  Y  |  U  |  I    |  O   | P  |     -     |
@@ -209,7 +209,7 @@
             >;
         };
 
-        layer1 {
+        NUM {
             bindings = <
          &undo         &redo  &kp STAR  &kp FSLH  &kp KP_DOT  &none      &none      &none      &none  &kp KP_DOT  &kp FSLH  &kp STAR         &none      &none
          &none  &kp KP_MINUS    &kp N7    &kp N8      &kp N9  &none  &kp MINUS  &kp EQUAL      &none      &kp N7    &kp N8    &kp N9  &kp KP_MINUS      &none
@@ -220,11 +220,13 @@
                                                               &to 0      &word      &none  &kp SPACE
                                                               &to 5     &paste      &none   &kp BSPC
             >;
+
+            label = "NUM";
         };
 
-        layer2 {
+        layer {
             bindings = <
- &mo 4   &mo 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &mo 4   &mo 3   &to 6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -233,9 +235,11 @@
                                         &trans  &trans  &trans  &trans
                                         &trans  &trans  &trans  &trans
             >;
+
+            label = "layer";
         };
 
-        layer3 {
+        BT {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
 &none  &none  &none  &none  &none  &none  &none  &out OUT_TOG         &none         &none         &none         &none         &none  &none
@@ -248,7 +252,7 @@
             >;
         };
 
-        Layer4 {
+        Media {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none       &none             &none              &none               &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none       &none             &none       &kp C_REWIND  &kp C_FAST_FORWARD
@@ -259,18 +263,50 @@
                                    &none  &none  &none  &none
                                    &none  &none  &none  &none
             >;
+
+            label = "Media";
         };
 
-        layer5 {
+        Mouse {
             bindings = <
-    &none      &none       &none       &none       &none   &none  &none  &none      &none       &none       &none       &none       &none  &none
-    &none      &none       &none       &none       &none   &none  &none  &none      &none     &houtui       &none    &qianjin       &none  &none
-&kp LCTRL  &kp LSHFT  &mwh MWH_L  &mwh MWH_U  &mwh MWH_R   &none                    &none  &mmv MMV_L  &mmv MMV_U  &mmv MMV_R  &mwh MWH_U  &none
-    &none      &none       &none  &mwh MWH_D       &none   &none                    &none       &none  &mmv MMV_D       &none  &mwh MWH_D  &none
-    &none      &none       &none       &none                                                                &none       &none       &none  &none
-                                                   &none                                    &mkp MCLK
-                                                           &to 1  &none  &none  &mkp LCLK
-                                                           &to 0  &none  &none  &mkp RCLK
+    &none      &none       &none       &none       &none  &none  &none  &none      &none       &none       &none       &none       &none  &none
+    &none      &none       &none       &none       &none  &none  &none  &none      &none     &houtui       &none    &qianjin       &none  &none
+&kp LCTRL  &kp LSHFT  &mwh MWH_L  &mwh MWH_U  &mwh MWH_R  &none                    &none  &mmv MMV_L  &mmv MMV_U  &mmv MMV_R  &mwh MWH_U  &none
+    &none      &none       &none  &mwh MWH_D       &none  &none                    &none       &none  &mmv MMV_D       &none  &mwh MWH_D  &none
+    &none      &none       &none       &none                                                               &none       &none       &none  &none
+                                                   &none                                   &mkp MCLK
+                                                          &to 1  &none  &none  &mkp LCLK
+                                                          &to 0  &none  &none  &mkp RCLK
+            >;
+
+            label = "Mouse";
+        };
+
+        Game {
+            bindings = <
+&kp ESC      &none  &none     &kp X  &kp C      &kp V    &kp Z  &to 0  &none  &none  &none  &none  &none  &none
+  &kp T      &none  &kp B     &kp U  &kp H      &none  &kp RET  &none  &none  &none  &none  &none  &none  &none
+&kp TAB  &kp LSHFT  &kp A     &kp W  &kp D      &kp F                  &none  &none  &none  &none  &none  &none
+  &mo 7  &kp LCTRL  &none     &kp S  &none      &kp Q                  &none  &none  &none  &none  &none  &none
+  &none      &none  &none  &kp LALT                                                  &none  &none  &none  &none
+                                     &kp R                                    &none
+                                            &kp SPACE    &none  &none  &none
+                                                &kp E    &none  &none  &none
+            >;
+
+            label = "Game";
+        };
+
+        Game_NUM {
+            bindings = <
+&none  &none   &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &kp N7  &kp N8  &kp N9  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &kp N4  &kp N5  &kp N6  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &kp N1  &kp N2  &kp N3  &none                &none  &none  &none  &none  &none  &none
+&none  &none   &none  &kp N0                                             &none  &none  &none  &none
+                               &none                              &none
+                                      &none  &none  &none  &none
+                                      &none  &none  &none  &none
             >;
         };
     };
