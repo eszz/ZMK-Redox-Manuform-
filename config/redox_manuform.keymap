@@ -284,14 +284,14 @@
 
         Game {
             bindings = <
-&kp ESC      &none  &none     &kp X  &kp C      &kp V    &kp Z  &to 0  &none  &none  &none  &none  &none  &none
-  &kp T      &none  &kp B     &kp U  &kp H      &none  &kp RET  &none  &none  &none  &none  &none  &none  &none
-&kp TAB  &kp LSHFT  &kp A     &kp W  &kp D      &kp F                  &none  &none  &none  &none  &none  &none
-  &mo 7  &kp LCTRL  &none     &kp S  &none      &kp Q                  &none  &none  &none  &none  &none  &none
-  &none      &none  &none  &kp LALT                                                  &none  &none  &none  &none
-                                     &kp R                                    &none
-                                            &kp SPACE    &none  &none  &none
-                                                &kp E    &none  &none  &none
+&kp ESC      &none  &none  &kp X  &kp C      &kp V    &kp Z  &to 0  &none  &none  &none  &none  &none  &none
+  &kp T      &none  &kp B  &kp U  &kp H      &none  &kp RET  &none  &none  &none  &none  &none  &none  &none
+&kp TAB  &kp LSHFT  &kp A  &kp W  &kp D      &kp F                  &none  &none  &none  &none  &none  &none
+  &none  &kp LCTRL  &none  &kp S  &none      &kp Q                  &none  &none  &none  &none  &none  &none
+  &none      &none  &none  &none                                                  &none  &none  &none  &none
+                                  &mo 7                                    &none
+                                         &kp SPACE    &none  &none  &none
+                                             &kp E    &none  &none  &none
             >;
 
             label = "Game";
@@ -302,7 +302,7 @@
 &none  &none   &none   &none   &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &kp N7  &kp N8  &kp N9  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &kp N4  &kp N5  &kp N6  &none                &none  &none  &none  &none  &none  &none
-&none  &none  &kp N1  &kp N2  &kp N3  &none                &none  &none  &none  &none  &none  &none
+&none  &none  &kp N1  &kp N2   &kp E  &none                &none  &none  &none  &none  &none  &none
 &none  &none   &none  &kp N0                                             &none  &none  &none  &none
                                &none                              &none
                                       &none  &none  &none  &none
