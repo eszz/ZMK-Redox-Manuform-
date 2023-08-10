@@ -1,5 +1,4 @@
-on: [push, pull_request, workflow_dispatch]
-
-jobs:
-  build:
-    uses: ufan/zmk/.github/workflows/build-user-config.yml@trackpad_dev
+- name: Use Node.js 16.x
+  uses: actions/setup-node@v2
+  with:
+    node-version: 16.x
