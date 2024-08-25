@@ -10,7 +10,7 @@
                 <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  // 列5
 
     row-gpios 
-            = <&gpio0 24 >,  // 行1
+            = <&gpio0 24 GPIO_ACTIVE_HIGH>,  // 行1
                 <&gpio1 0 GPIO_ACTIVE_HIGH>,   // 行2
                 <&gpio0 11 GPIO_ACTIVE_HIGH>,  // 行3
                 <&gpio1 4 GPIO_ACTIVE_HIGH>,   // 行4
