@@ -8,6 +8,13 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if SHIELD_REDOX_MANUFORM_RIGHT
+
+    config ZMK_KEYBOARD_NAME
+        default "redox_manuform-slave"
+
+endif
+
 if SHIELD_REDOX_MANUFORM_LEFT || SHIELD_REDOX_MANUFORM_RIGHT
 
 config ZMK_SPLIT
