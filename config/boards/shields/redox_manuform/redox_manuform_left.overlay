@@ -1,6 +1,7 @@
 #include "redox_manuform.dtsi"
 
 &kscan0 {
+    diode-direction = "row2col";
     col-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>,   // 列1
                 <&gpio0 8 GPIO_ACTIVE_HIGH>,   // 列2
                 <&gpio0 17 GPIO_ACTIVE_HIGH>,  // 列3
