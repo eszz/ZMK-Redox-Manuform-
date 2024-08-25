@@ -13,7 +13,7 @@
 
     row-gpios 
             = <&gpio0 11 GPIO_ACTIVE_HIGH>,  // 列1
-                <&gpio1 4 GPIO_ACTIVE_HIGH>,   // 列2
+                <&gpio1 4 GPIO_ACTIVE_HIGH>,   // 列2                                                                               
                 <&gpio1 6 GPIO_ACTIVE_HIGH>,   // 列3
                 <&gpio0 9 GPIO_ACTIVE_HIGH>,   // 列4
                 <&gpio0 31 GPIO_ACTIVE_HIGH>;  // 列5 
