@@ -12,10 +12,6 @@ if SHIELD_REDOX_MANUFORM_RIGHT
 
     config ZMK_KEYBOARD_NAME
         default "redox_manuform-slave"
-
-    config ZMK_SPLIT_ROLE_PERIPHERAL
-		default y
-		
 endif
 
 if SHIELD_REDOX_MANUFORM_LEFT || SHIELD_REDOX_MANUFORM_RIGHT
